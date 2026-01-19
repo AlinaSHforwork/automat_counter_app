@@ -16,7 +16,7 @@
 .body {
   background-color: #fdf0f3;
   border: 3px solid #bf3853;
-  width: auto;
+  width: 300px 600px;
   padding: 20px;
   margin: 30px 100px auto;
   font-family: monospace;
@@ -43,7 +43,7 @@
   margin-top: 5px;
   border: 0;
   outline: 0;
-  font-size: 20px;
+  font-size: 25px;
   color: #661021;
   background-color: #fdf0f3;
   font-family: monospace;
@@ -53,6 +53,22 @@
   margin-top: 20px;
   border: 0;
   outline: 0;
+  border-bottom: 2px solid #bf3853;
+  font-size: 25px;
+  color: #661021;
+  background-color: #fdf0f3;
+  font-family: monospace;
+}
+.information {
+  font-size: 20px;
+  color: #661021;
+}
+.textarea {
+  width: 45%;
+  margin-top: 20px;
+  border: 0;
+  outline: 0;
+  height: 30px;
   border-bottom: 2px solid #bf3853;
   font-size: 25px;
   color: #661021;

@@ -36,7 +36,7 @@ prompt.get(['name', 'surname', 'specialty', 'group', 'marks'], function (err, re
 var express = require('express');
 var router = express.Router();
 
-/* GET cnt page. */
+/* GET info page. */
 router.get('/', function(req, res, next) {
   //res.send('Automat counter');
   console.log("req.method: " +  req.method);
@@ -44,7 +44,7 @@ router.get('/', function(req, res, next) {
   console.log("req.url: " + req.url);
   console.log("req.statusCode: " + req.statusCode);
   console.log("req.baseUrl: " + req.baseUrl);
-  res.render('cnt', {title: 'Automat Counter Page'});
+  res.render('info', {title: 'Student Information Page'});
 //сторінка cnt для вводу даних студента
 //  res.render('cnt', { showAlert: true, alertMessage: "Welcome to Automat counter page!" });
 });
@@ -59,7 +59,8 @@ router.post('/', function(req, res, next) {
   console.log("Student Surname: " + st_surname);
   console.log("Student Specialty: " + st_specialty);
   console.log("Student Group: " + st_group);
-  console.log("Student Marks: " + st_marks);
+  console.log("Year of Study: " + req.body.stud_year);
+  console.log("Additional Info: " + req.body.stud_additional);
 });
 
 module.exports = router;

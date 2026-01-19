@@ -3,13 +3,20 @@ extends layout
 block content
   .body
     h1.title #{title}
+    h2.header Student Information Lookup
 
     p.content Enter student name to find details:    
-    input.input(type="text" name="name" placeholder="Enter student name:")
-    button.button(type="find") Find
-    
-    br
+    input.input.student(type="text" name="name" placeholder="Enter student name:")
+    button.button.findbutton(type="find") Find
 
+            //- p.content Student Details:
+    pre.information Student Details:
+      #student-name 
+      #student-surname  
+      #student-specialty  
+      #student-group 
+      #year-of-study  
+      #additional-info  
     p.content If you can't find a student, you can navigate to the 
-      <a href="/cnt">Counter Page</a> to enter student details:
+      <a href="/info">Student Information Page</a> to enter student details:
     

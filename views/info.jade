@@ -5,7 +5,7 @@ block content
     h1.title #{title}
     p.content Please enter your student details below: 
 
-    p.form(action="cnt", method="post")
+    p.form(action="info", method="post")
       label.label(for="name") Name: 
       input.input(type="text", name="stud_name", id="name")
       br
@@ -22,7 +22,12 @@ block content
       input.input(type="text", name="stud_group", id="group")
       br
 
-      label.label(for="marks") Marks (comma-separated): 
-      input.input(type="text", name="stud_marks", id="marks")
+      label.label(for="year") Year of Study: 
+      input.input(type="number", name="stud_year", id="year" min="1" max="6")
       br
+
+      label.label(for="additional") Additional Info: 
+      textarea.textarea(name="stud_additional", id="additional" rows="4" cols="30")
+      br
+
       button.button(type="submit") Submit 
